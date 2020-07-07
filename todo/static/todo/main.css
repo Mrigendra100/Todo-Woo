@@ -1,0 +1,28 @@
+.GREEN{
+    background: linear-gradient(rgba(132, 218, 144, 0.685) , rgba(34, 146, 24, 0.548));
+}
+
+.RED{
+    background: linear-gradient(rgba(238, 67, 37, 0.685) , rgba(245, 7, 7, 0.548));
+}
+
+
+.BLUE{
+    background: linear-gradient(rgba(86, 130, 196, 0.685) , rgba(9, 100, 219, 0.548));
+}
+
+
+.BLACK{
+    background: linear-gradient(rgba(158, 157, 157, 0.685) , rgba(0, 5, 7, 0.226));
+}
+
+
+.ORANGE{
+    background: linear-gradient(rgba(238, 160, 57, 0.685) , rgba(255, 104, 4, 0.658));
+}
+
+.Important{
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}

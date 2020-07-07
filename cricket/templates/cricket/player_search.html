@@ -1,0 +1,26 @@
+{% extends "todo/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="container">
+
+    
+        <form method="POST">
+            {% csrf_token %}
+            {{ forms|crispy }}
+            <button type="submit" class="btn btn-primary">Search</button>
+
+        </form>
+
+        <p class="text-center h4"> {{ error }} </p>
+
+        
+
+
+
+
+
+</div>
+
+{% endblock %}

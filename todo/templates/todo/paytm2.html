@@ -1,0 +1,25 @@
+{% extends "todo/base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <!-- {{ response_dict }} -->
+    <div class="col my-4">
+
+        <h2>Payment status regarding your order Id {{response_dict.ORDERID}}</h2>
+        {% if response_dict.RESPCODE == '01' %}
+         <div class="jumbotron">
+          <h1 class="display-4"> CONGRATULATION YOUR ORDER PLACED SUCCESSFULLY </h1>
+          <hr class="my-4">
+          <p class="lead">Amount :- {{response_dict.TXNAMOUNT}}  </p>
+          <p class="lead">Transaction ID :- {{response_dict.TXNID}}</p>
+        {% else %}
+          <h1 class="display-4">ORDER FAILED !!!!!!!!!!!!!! </h1>
+        {% endif%}
+
+    </div>
+
+    </div>
+
+</div>
+{% endblock %}
